@@ -1,0 +1,31 @@
+{
+    "parser": "babel-eslint",
+    "extends" : [
+        "airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react"
+    ],
+    "globals": {
+        "window": true,
+        "document": true,
+        "alert": true,
+        "FormData": true
+    },
+    "settings":{
+        "import/resolver" :{
+            "node": {
+                "paths": ["./src"],
+                "extensions": [".js"]
+            }
+        }
+    },
+    "rules":{
+        "react/jsx-filename-extension":0,
+        "react/jsx-props-no-spreading":0,
+        "react/forbid-prop-types":0,
+        "no-alert": 0,
+        "jsx-a11y/label-has-associated-control":0
+    }
+}
